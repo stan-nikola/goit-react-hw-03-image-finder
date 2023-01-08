@@ -54,7 +54,7 @@ export class App extends Component {
       toast.warn('Enter search query');
       return;
     }
-
+    this.setState({ page: 1 });
     this.setState({ query });
   };
   loadMore = () => {
